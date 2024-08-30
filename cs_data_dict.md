@@ -102,3 +102,4 @@ word_lookup/
 - Deploy an interesting and high-quality portfolio project for all of us to show.
 
 - Example of Big-0 Notion code, n^2 or O(n^2)
+- When to use Pseudeocode examples, Used for artical,informal langauges used to develop algorithms, Closely similar to everyday English.
