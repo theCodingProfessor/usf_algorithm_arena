@@ -103,6 +103,9 @@ word_lookup/
 
 - Example of Big-0 Notion code, n^2 or O(n^2)
 - When to use Pseudeocode examples, Used for artical,informal langauges used to develop algorithms, Closely similar to everyday English.
+  
 -Typical Run time for C++ code. Basically the "run time" is teh ISO standard required ny the class libary inside code.
+
 -What is the set theory. The set theory regarding C++ is the Standard template Library which is a contianer unique to what is sorted and ordered witin it.
+
 How to write/solve summations in C++ step by step examples. 1. Intalize a varible that is a sum=0 2. Run a loop to first intger, 1 to n.3. In the loop the add the value to the integer to the current value of each sum in its interation. 4. Lastly loop the variables sum the sum will hold the first natural numbers to the summation.
