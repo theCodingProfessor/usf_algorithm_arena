@@ -100,3 +100,5 @@ word_lookup/
 - Discuss and build interactive features and engaging visualizations
 - Create a powerful tool that helps us learn/understand/remember advanced data structures and algorithms concepts.
 - Deploy an interesting and high-quality portfolio project for all of us to show.
+
+- Example of Big-0 Notion code, n^2 or O(n^2)
