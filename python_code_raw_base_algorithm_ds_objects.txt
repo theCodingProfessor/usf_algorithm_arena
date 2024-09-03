@@ -1,0 +1,99 @@
+class BaseObject:
+    def __init__(self, name, math_proof=None, pseudocode=None, python_code=None, 
+                 visualization=None, terms=None, tagged_terms=None, examples=None, 
+                 references=None, related_concepts=None):
+        self.name = name
+        self.math_proof = math_proof
+        self.pseudocode = pseudocode
+        self.python_code = python_code
+        self.visualization = visualization
+        self.terms = terms if terms else {}
+        self.tagged_terms = tagged_terms if tagged_terms else []
+        self.examples = examples if examples else []
+        self.references = references if references else []
+        self.related_concepts = related_concepts if related_concepts else []
+
+    def add_term(self, term, definition):
+        self.terms[term] = definition
+
+    def add_tagged_term(self, term):
+        self.tagged_terms.append(term)
+
+    def add_example(self, example):
+        self.examples.append(example)
+
+    def add_reference(self, reference):
+        self.references.append(reference)
+
+    def add_related_concept(self, concept):
+        self.related_concepts.append(concept)
+
+
+class DataStructure(BaseObject):
+    def __init__(self, name, short_description, use_case_scenario, features=None, 
+                 asymptotic_notation=None, algorithm_connections=None, memory_usage=None, 
+                 variants=None, implementation_notes=None, common_pitfalls=None, **kwargs):
+        super().__init__(name, **kwargs)
+        self.short_description = short_description
+        self.use_case_scenario = use_case_scenario
+        self.features = features if features else []
+        self.asymptotic_notation = asymptotic_notation if asymptotic_notation else {}
+        self.algorithm_connections = algorithm_connections if algorithm_connections else []
+        self.memory_usage = memory_usage
+        self.variants = variants if variants else []
+        self.implementation_notes = implementation_notes if implementation_notes else []
+        self.common_pitfalls = common_pitfalls if common_pitfalls else []
+
+    def add_feature(self, feature):
+        self.features.append(feature)
+
+    def add_asymptotic_notation(self, operation, notation):
+        self.asymptotic_notation[operation] = notation
+
+    def add_algorithm_connection(self, algorithm):
+        self.algorithm_connections.append(algorithm)
+
+    def add_variant(self, variant):
+        self.variants.append(variant)
+
+    def add_implementation_note(self, note):
+        self.implementation_notes.append(note)
+
+    def add_common_pitfall(self, pitfall):
+        self.common_pitfalls.append(pitfall)
+
+
+class Algorithm(BaseObject):
+    def __init__(self, name, short_description, use_case_scenario, 
+                 best_case_scenario=None, average_case_scenario=None, 
+                 worst_case_scenario=None, asymptotic_notation=None, 
+                 data_structure_connections=None, optimization_opportunities=None, 
+                 parallelizability=None, examples_and_applications=None, 
+                 variants_and_extensions=None, **kwargs):
+        super().__init__(name, **kwargs)
+        self.short_description = short_description
+        self.use_case_scenario = use_case_scenario
+        self.best_case_scenario = best_case_scenario
+        self.average_case_scenario = average_case_scenario
+        self.worst_case_scenario = worst_case_scenario
+        self.asymptotic_notation = asymptotic_notation if asymptotic_notation else {}
+        self.data_structure_connections = data_structure_connections if data_structure_connections else []
+        self.optimization_opportunities = optimization_opportunities if optimization_opportunities else []
+        self.parallelizability = parallelizability
+        self.examples_and_applications = examples_and_applications if examples_and_applications else []
+        self.variants_and_extensions = variants_and_extensions if variants_and_extensions else []
+
+    def add_asymptotic_notation(self, operation, notation):
+        self.asymptotic_notation[operation] = notation
+
+    def add_data_structure_connection(self, data_structure):
+        self.data_structure_connections.append(data_structure)
+
+    def add_optimization_opportunity(self, opportunity):
+        self.optimization_opportunities.append(opportunity)
+
+    def add_example_or_application(self, example):
+        self.examples_and_applications.append(example)
+
+    def add_variant_or_extension(self, variant):
+        self.variants_and_extensions.append(variant)
