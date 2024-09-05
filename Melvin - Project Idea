@@ -1,0 +1,34 @@
+## PROJECT OVERVIEW - Feel free to either add or make some changes
+General Idea : A game design / web page   based study  program involving learning code(python ) for beginners.{cobination of both Sam's and Anna's idea)
+includes a levelling based system where players move on to the next level everytime they answer a qauestion correctly.
+Certain achievemenst would result in ceratin power ups.
+
+# Things to do
+Web Page Creation:
+Build a responsive, visually appealing website using HTML/CSS and possibly a front-end framework like React.
+
+Content Development:
+Develop Python programming challenges with increasing difficulty (beginner to intermediate levels).
+Create short tutorials, hints, and feedback loops for incorrect answers.
+
+Game Design/Model Implementation:
+Design a leveling system that tracks user progress and grants power-ups.
+Develop a "reward system" for unlocking badges or access to advanced content when achievements are earned.
+Optionally include leaderboards to add a competitive element.
+
+Web Page Design & Editing:
+Design an engaging UI/UX to encourage learning. 
+Add game-like visual elements such as progress bars, icons for achievements, and thematic designs related to coding. 
+
+Final Touches:
+Test the web page for bugs, fix any responsive design issues, and optimize for performance.
+Add finishing touches like animations, sound effects (for achievements), and other engaging elements.
+
+#Resources we could use
+Python: Core language for creating quizzes, coding challenges, and handling backend processes.
+GitHub: For version control and collaboration.
+Textbooks/Professors: To guide content creation and ensure that the coding challenges follow best practices.
+Web Development Tools:
+HTML/CSS/JavaScript: Front-end website development.
+Game Design References: Inspiration for achievements, rewards, and progression systems from gamification sources or simple game design principles.
+
