@@ -1,0 +1,1 @@
+Difference between Heap and Heapsort- The main differnce is with Heap is used to sort an array also laregly the time it takes required to merge sort counterbalanced by the time required to build the heap in heapsort.
